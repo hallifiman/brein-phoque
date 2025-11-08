@@ -52,8 +52,8 @@ def convert_bfp_to_bfa(input_path):
 
 if __name__ == "__main__":
     if len(sys.argv) < 2:
-        print("Drag a .BFP file onto this script to convert it.")
-        input("Press Enter to exit...")
+        sys.exit(0)
     else:
         for file_path in sys.argv[1:]:
             convert_bfp_to_bfa(file_path)
+
